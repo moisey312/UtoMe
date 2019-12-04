@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+    <item
+            android:id="@+id/navigation_new_post"
+            android:icon="@drawable/icon_plus"
+            android:title="Оформить заказ"/>
+    <item
+            android:id="@+id/navigation_post_list"
+            android:icon="@drawable/icon_list"
+            android:title="Список заказов"/>
+
+    <item
+            android:id="@+id/navigation_me"
+            android:icon="@drawable/icon_me"
+            android:title="Я"/>
+
+</menu>

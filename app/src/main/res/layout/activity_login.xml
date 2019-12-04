@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_background"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="415dp"
+            android:layout_height="74dp"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            android:background="#00ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+            android:layout_width="245dp"
+            android:layout_height="61dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:background="@drawable/edit_text"
+            android:hint="@string/e_mail"
+            android:textSize="24sp"
+            android:textLocale=""
+            android:id="@+id/et_email"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="160dp" app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    />
+
+    <EditText
+            android:id="@+id/et_password"
+            android:layout_width="245dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            android:textStyle="normal" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/et_email"/>
+
+    <Button
+            android:text="@string/sign_in"
+            android:layout_width="166dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/color"
+            android:id="@+id/btn_sign_in"
+            android:onClick="onClick"
+            android:textSize="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password"/>
+
+    <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="271dp"
+            android:layout_height="57dp"
+            android:background="@drawable/color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btn_sign_in"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="onClick"
+            android:text="@string/sign_up"
+            android:textSize="16dp"/>
+
+    <ImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp" app:srcCompat="@drawable/lock"
+            android:id="@+id/change_profile"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/et_password"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+    <ImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp" app:srcCompat="@drawable/mail"
+            android:id="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/et_email"
+            android:layout_marginEnd="4dp" android:layout_marginTop="160dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <ImageView
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/u"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

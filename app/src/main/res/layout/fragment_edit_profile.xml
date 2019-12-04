@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_background"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+            />
+            <ImageView
+                    android:layout_width="276dp"
+                    android:layout_height="258dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/no_avatar"
+                    android:id="@+id/change_profile" android:layout_marginBottom="0dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_profile"
+                    android:id="@+id/edit_name"
+                    android:background="@drawable/edit_text"
+                    android:layout_marginLeft = "50dp"
+                    android:layout_marginRight = "50dp"
+                    android:layout_marginTop="50dp"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_edit_name"
+                        android:maxLines="1"
+                        android:hint="Имя"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/edit_name"
+                    android:background="@drawable/edit_text"
+                    android:id="@+id/edit_address"
+                    android:layout_marginLeft = "50dp"
+                    android:layout_marginRight = "50dp"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_edit_address"
+                        android:maxLines="2"
+                        android:hint="Адрес"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text"
+                    android:layout_below="@+id/edit_address"
+                    android:id="@+id/edit_phone"
+                    android:layout_marginLeft = "50dp"
+                    android:layout_marginRight = "50dp"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/text_edit_phone"
+                        android:inputType="number|phone"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:hint="Телефон"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                    android:text="Сохранить"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/color"
+                    android:layout_below="@+id/edit_phone"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="125dp"
+                    android:id="@+id/edit_profile_save"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

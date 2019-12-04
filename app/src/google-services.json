@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "747869657634",
+    "firebase_url": "https://utome-7850c.firebaseio.com",
+    "project_id": "utome-7850c",
+    "storage_bucket": "utome-7850c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747869657634:android:0f4a18bed316059f",
+        "android_client_info": {
+          "package_name": "com.example.utome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747869657634-o55vuvgokor92eakvdp9mr8lp50p8ue4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.utome",
+            "certificate_hash": "33b0593344fb88e63e3f064b09c9601a010bb16c"
+          }
+        },
+        {
+          "client_id": "747869657634-qlfrl3ffgbu7qtcak2nd9o81l4knhh2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_7aNXi5F-rAgDjkMVKlI9wZ2CFgd7x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747869657634-qlfrl3ffgbu7qtcak2nd9o81l4knhh2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

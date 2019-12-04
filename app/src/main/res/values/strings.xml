@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">UToMe</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_new_post">New post</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="new_post">New Post</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="categories">
+        <item>Еда</item>
+        <item>Техника</item>
+        <item>Медицина</item>
+        <item>Гигиена</item>
+        <item>Одежда</item>
+        <item>Бытовая химия</item>
+        <item>Другое</item>
+    </string-array>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:padding="5dp"
+    >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:id="@+id/Post_layer">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:background="@drawable/category_0"
+                    android:id="@+id/category"
+            />
+
+
+            <ImageView
+                    android:id="@+id/status"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/profile_imageview_bg"
+                    android:elevation="5dp" android:scaleType="centerCrop"/>
+            <TextView
+                    android:text="Информация"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/rv_main_info"
+                    android:background="#ffffff"
+                    android:layout_alignBottom="@id/category"
+            />
+
+            <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/profile_imageview_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_pic"
+            />
+
+            <ImageView
+
+                    android:layout_width="250dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:background="#4570D5"
+                    android:layout_toRightOf="@+id/avatar"
+            />
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@id/rv_main_info"
+                    android:layout_marginBottom="0dp"
+                    android:background="#4570D5"/>
+
+            <TextView
+                    android:id="@+id/rv_main_address"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="Адрес"
+                    android:textColor="#ffffff"
+                    android:layout_above="@id/rv_main_info"
+                    android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rv_main_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/avatar"
+                android:text="Имя"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                    android:id="@+id/baton"
+                    android:layout_height="wrap_content"
+                    android:text="Отменить"
+                    android:background="@drawable/color"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/rv_main_info"
+                    android:layout_centerHorizontal="true"/>
+
+            <Button
+                    android:id="@+id/accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/baton"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#A46070"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/color"
+                    android:text="Доставлено"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

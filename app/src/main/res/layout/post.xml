@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:padding="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Post_layer">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:background="@drawable/category_0"
+                    android:id="@+id/category" />
+            <TextView
+                    android:text="Информация"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/rv_main_info"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    android:layout_alignBottom="@id/category"
+            />
+
+            <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/profile_imageview_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_pic"
+
+            />
+
+            <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:background="#4570D5"
+                    android:layout_above="@id/rv_main_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+
+            />
+
+            <TextView
+                android:id="@+id/rv_main_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rv_main_info"
+                android:layout_marginBottom="5dp"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="Имя"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
